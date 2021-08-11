@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-repeat: no-repeat;
+    /* background-color: rgb(79, 109, 109); */
+}
+#skillprob{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.skillprob{
+    background: linear-gradient(to bottom left,rgb(168, 32, 32), #d89910, rgb(0, 116, 248));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 100px auto; */
+    font-family: sans-serif;
+}
+.skillbar-h1{
+    font-size: 50px;
+    border-bottom: 3px solid rgb(0, 241, 169);
+    color: rgb(233, 218, 10);
+    /* padding-bottom: 25px; */
+    cursor: pointer;
+    transition: 0.4s;
+}
+.skillbar-h1:hover{
+    border-bottom: 5px solid rgb(0, 241, 60);
+    border-radius: 30px;
+    font-size: 60px;
+    color: rgb(43, 255, 0);
+}
+.progress-bar-box{
+    width: 75vw;
+}
+.progress-bar .progress-bar-box .progress-text{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 255, 115);
+    font-size: 1.2rem;
+}
+.progress-back{
+    width: 100%;
+    height: 20px;
+    background: #5084b4;
+    border-radius: 50px;
+    margin-bottom: 11px;
+    cursor: pointer;
+    transition: 0.35s;
+}
+.progress-back:hover{
+    background: #c7b44b;
+}
+.progress-inner{
+    border-radius: 50px;
+    background: linear-gradient(to right, #f78f07, rgb(131, 47, 170));
+    height: 20px;
+    transition: 0.3s;
+}
+.progress-inner:hover{
+    background: linear-gradient(to right,rgb(14, 199, 122), #2ebd1b, rgb(248, 244, 0));
+}
+.progress-bar:nth-child(2) .progress-inner{
+    width: 90%;
+}
+.progress-bar:nth-child(3) .progress-inner{
+    width: 20%;
+}
+.progress-bar:nth-child(4) .progress-inner{
+    width: 10%;
+}
+.progress-bar:nth-child(5) .progress-inner{
+    width: 83%;
+}
+.progress-bar:nth-child(6) .progress-inner{
+    width: 54%;
+}
+.progress-bar:nth-child(7) .progress-inner{
+    width: 26%;
+}
+
+ @media (min-width: 940px){
+    .progress-bar-box{
+        width: 800px;
+    }
+}
+
+@media (max-width: 730px){
+    .skillbar-h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 450px){
+    .skillbar-h1{
+        font-size: 30px;
+    }
+}
