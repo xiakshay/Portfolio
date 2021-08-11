@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./style/scrollbar.css">
+    <link rel="stylesheet" href="./style/navbarstyle.css">
+    <link rel="stylesheet" href="./style/frontStyle.css">
+    <link rel="stylesheet" href="./style/projectstyle.css" />
+    <link rel="stylesheet" href="./style/linestyle.css">
+    <link rel="stylesheet" href="./style/timelinestyle.css">
+    <link rel="stylesheet" href="./style/aboutstyle.css">
+    <link rel="stylesheet" href="./style/contentstyle.css">
+    <link rel="stylesheet" href="./style/footerstyle.css">
+
+
+    <!-- anothers link -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!--fav-icon-------------->
+    <link rel="shortcut icon" href="image/fav-icon.png" />
+    <!--using FontAwesome------------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <nav class="nav-bar">
+        <label class="logo">Portfolio</label>
+        <ul class="nav-ul">
+            <li class="nav-li"><a id="nav-a" class="active" href="#home" >Home</a></li>
+            <li class="nav-li"><a id="nav-a" href="#pabout">About</a></li>
+            <li class="nav-li"><a id="nav-a" href="#pr-team">Projects</a></li>
+            <li class="nav-li"><a id="nav-a" href="#tskills">Skills</a></li>
+            <li class="nav-li"><a id="nav-a" href="#ccontact">Contact</a></li>
+        </ul>
+        <label id="nav-icon">
+            <i class="fas fa-bars">.</i>
+        </label>
+        <script>
+            $(document).ready(function () {
+                $('#nav-icon').click(function () {
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+    </nav>
+    <section class="banner" id="home">
+        <div class="imgBx">
+            <img src="image/frontim1.jpg" alt="1st image" class="active">
+            <img src="image/frontim2.jpg" alt="2nd image">
+            <img src="image/frontim3.jpg" alt="3rdimage">
+            <img src="image/frontim4.jpg" alt="4th image">
+        </div>
+
+        <div class="contentBx">
+            <div class="active">
+                <h2>Akshay Kumar Kushwaha</h2>
+                <p>A Compititive programmer for making life more simple.</p>
+                <p>Programming for others.</p>
+                <a href="#pabout" class="nButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Portfolio
+                </a>
+            </div>
+            <div>
+                <h2>Akshay Kumar Kushwaha</h2>
+                <p>Book/Story Lover</p>
+                <p>reading books for relax and for being more creative.</p>
+                <a href="#pabout" class="nButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Portfolio
+                </a>
+            </div>
+            <div>
+                <h2>Akshay Kumar Kushwaha</h2>
+                <p>Finding a path to make future more bright. Adding more and more thoughts</p>
+                <a href="#pabout" class="nButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Portfolio
+                </a>
+            </div>
+            <div>
+                <h2>Akshay Kumar Kushwaha</h2>
+                <p>Science Lover</p>
+                <p>Beleiving in science, It's my life and also will work for research and productive work</p>
+                <a href="#pabout" class="nButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Portfolio
+                </a>
+            </div>
+        </div>
+
+        <ul class="controls">
+            <li onclick="prevSlide();prevSlideText();"></li>
+            <li onclick="nextSlide(); nextSlideText();"></li>
+        </ul>
+    </section>
+    <section id="pr-team">
+        <h1 class="pr-heading">
+            <!--icon---------------->
+            <i class="fas fa-rocket"></i> My Projects
+        </h1>
+        <!--container---------------->
+        <div class="pr-container">
+            <!--box-1----------->
+            <div class="pr-box">
+                <!--top-bar---------------->
+                <div class="pr-top-bar"></div>
+                <!--nav------------->
+                <div class="pr-nav">
+                    <!--verify-icon-------->
+                    <i class="verify fas fa-check-circle"></i>
+                    <!--heart-btn--------------->
+                    <input class="heart-btn" type="checkbox" id="heart-btn">
+                    <label class="heart" for="heart-btn"></label>
+                </div>
+                <!--img and details---------------->
+                <div class="pr-details">
+                    <img src="image/t-1.png" alt="">
+                    <strong>Web Development</strong>
+                    <p>My Portfolio</p>
+                    <p>Some JavaScript Projects</p>
+                </div>
+                <!--view-btns------------------->
+                <div class="pr-btn">
+                    <a href="https://github.com/Akshay01-M/stopwatchcounter.github.com" target="_blank"><i
+                            class="fab fa-github"></i>Github</a>
+                    <a href="https://akshay01-m.github.io/stopwatchcounter.github.com/" target="_blank"><i
+                            class="fas fa-eye"></i>View</a>
+                </div>
+            </div>
+            <!--box-2----------->
+            <div class="pr-box">
+                <!--top-bar---------------->
+                <div class="pr-top-bar"></div>
+                <!--nav------------->
+                <div class="pr-nav">
+                    <!--verify-icon-------->
+                    <i class="verify fas fa-check-circle"></i>
+                    <!--heart-btn--------------->
+                    <input class="heart-btn" type="checkbox" id="heart-btn2">
+                    <label class="heart" for="heart-btn2"></label>
+                </div>
+                <!--img and details---------------->
+                <div class="pr-details">
+                    <img src="image/t-2.png" alt="">
+                    <strong>C++ Game</strong>
+                    <p>Multi Game System</p>
+                    <p>Five Games in a set </p>
+                    <p> Time and History Management</p>
+                </div>
+                <!--view-btns------------------->
+                <div class="pr-btn">
+                    <a href="https://github.com/Akshay01-M/GameHub" target="_blank"><i
+                            class="fab fa-github"></i>Github</a>
+                    <a href="https://github.com/Akshay01-M/GameHub" target="_blank"><i class="fas fa-eye"></i>View</a>
+                </div>
+            </div>
+            <!--box-3----------->
+            <div class="pr-box">
+                <!--top-bar---------------->
+                <div class="pr-top-bar"></div>
+                <!--nav------------->
+                <div class="pr-nav">
+                    <!--verify-icon-------->
+                    <i class="far fa-check-circle"></i>
+                    <!--heart-btn--------------->
+                    <input class="heart-btn" type="checkbox" id="heart-btn3">
+                    <label class="heart" for="heart-btn3"></label>
+                </div>
+                <!--img and details---------------->
+                <div class="pr-details">
+                    <img src="image/t-3.png" alt="">
+                    <strong>Python</strong>
+                    <p>Gesture System</p>
+                    <p>Control device without any touch</p>
+                    <p>(Not Completed Yet)</p>
+                </div>
+                <!--view-btns------------------->
+                <div class="pr-btn">
+                    <a href="#"><i class="fab fa-github"></i>Github</a>
+                    <a href="#"><i class="fas fa-eye"></i>View</a>
+                </div>
+            </div>
+            <!--box-4----------->
+            <div class="pr-box">
+                <!--top-bar---------------->
+                <div class="pr-top-bar"></div>
+                <!--nav------------->
+                <div class="pr-nav">
+                    <!--verify-icon-------->
+                    <i class="far fa-check-circle"></i>
+                    <!--heart-btn--------------->
+                    <input class="heart-btn" type="checkbox" id="heart-btn4">
+                    <label class="heart" for="heart-btn4"></label>
+                </div>
+                <!--img and details---------------->
+                <div class="pr-details">
+                    <img src="image/t-4.jpg" alt="">
+                    <strong>Web Development</strong>
+                    <p>My Loving Place</p>
+                    <p>(going on Wait 6 Months)</p>
+                </div>
+                <!--view-btns------------------->
+                <div class="pr-btn">
+                    <a href="#"><i class="fab fa-github"></i>Github</a>
+                    <a href="#"><i class="fas fa-eye"></i>View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="timeline" id="tskills">
+        <div class="tim-container">
+            <div class="tim-topSection">
+                <h1>Skill Hands On projects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempore inventore nulla! Consequatur
+                    tenetur maiores impedit ex tempora neque quidem perspiciatis tempore! Aut, nemo laboriosam quos
+                    eaque ipsam ea laborum.</p>
+            </div>
+
+            <div class="tim-timeline">
+                <div class="line"></div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>Skill 1</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa voluptatibus
+                            similique laudantium soluta ipsam, consequuntur tempora velit ut modi enim quos dignissimos
+                            voluptatum iure maiores ducimus facilis? Architecto, sit?</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>Skill 2</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa voluptatibus
+                            similique laudantium soluta ipsam, consequuntur tempora velit ut modi enim quos dignissimos
+                            voluptatum iure maiores ducimus facilis? Architecto, sit?</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>Skill 3</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa voluptatibus
+                            similique laudantium soluta ipsam, consequuntur tempora velit ut modi enim quos dignissimos
+                            voluptatum iure maiores ducimus facilis? Architecto, sit?</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>Skill 4</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa voluptatibus
+                            similique laudantium soluta ipsam, consequuntur tempora velit ut modi enim quos dignissimos
+                            voluptatum iure maiores ducimus facilis? Architecto, sit?</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>Skill 5</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa voluptatibus
+                            similique laudantium soluta ipsam, consequuntur tempora velit ut modi enim quos dignissimos
+                            voluptatum iure maiores ducimus facilis? Architecto, sit?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="pabout">
+        <div class="ab-container">
+            <div class="grid">
+                <div class="left">
+                    <img src="./image/my_pic.jpeg" alt="My pic">
+                </div>
+                <div class="right">
+                    <h4>Hey there!</h4>
+                    <h1>I am Akshay</h1>
+                    <h3>AI and ML do</h3>
+                    <p>dipisicing elit. Aperiam consequatur dolorem non amet recusandae, expedita similique dignissimos
+                        numquam doloremque error in et accusantium ad excepturi, quasi quo repellat. Deserunt, nam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur quisquam natus q</p>
+                    <a href="#" class="btn">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ccontact" class="contact">
+        <div class="con-container">
+            <div class="contactInfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="./image/location.png" alt="location"></span>
+                            <span>No. 1 Colony <br>
+                                Durga mandir, Katihar <br>
+                                854105</span>
+                        </li>
+                        <li>
+                            <span><img src="./image/mail.png" alt="location"></span>
+                            <span>akshay010175@gmail.com</span>
+                        </li>
+                        <li>
+                            <span><img src="./image/call.png" alt="phone"></span>
+                            <span>+91 62009*****</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="#"><img src="./image/1.png" alt="fb"></a></li>
+                    <li><a href="#"><img src="./image/2.png" alt="tw"></a></li>
+                    <li><a href="#"><img src="./image/3.png" alt="ins"></a></li>
+                    <li><a href="#"><img src="./image/4.png" alt="ps"></a></li>
+                    <li><a href="#"><img src="./image/5.png" alt="in"></a></li>
+                </ul>
+            </div>
+
+            <div class="contactForm"">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="foo-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affilate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online shooping</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- scripts of pages -->
+    <script src="./script/scrollbar.js"></script>
+    <script src="./script/frontscript.js"></script>
+    <script src="./script/timelinescript.js"></script>
+</body>
+
+</html>

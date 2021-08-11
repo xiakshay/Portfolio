@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color:#ff282b;
+}
+.about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #000000;
+}
+.ab-container{
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.ab-container .grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.ab-container .grid .left img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.ab-container .grid .right > *{
+    margin-bottom: 1.1rem;
+    color: #fff;
+}
+.ab-container .grid .right h4{
+    font-weight: 500;
+    background: var(--color);
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.ab-container .grid .right h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.ab-container .grid .right p{
+    text-align: justify;
+}
+.ab-container .grid .right .btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.ab-container .grid .right .btn::after{
+    content: '';
+    background: var(--color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+.ab-container .grid .right .btn:hover::after{
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .ab-container .grid{
+        grid-template-columns: 1fr;
+    }
+}
