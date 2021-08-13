@@ -100,4 +100,8 @@ body{
         left: 0;
     }
 }
-
+@media(max-width: 370px){
+    .nav-bar .logo {
+        padding: 0 50px;
+    }
+}

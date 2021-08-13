@@ -88,6 +88,14 @@ body{
 }
 .con-container .contactInfo ul.sci li a img{
     filter: invert(1);
+    width: 1.5rem;
+    transition: 0.5s;
+}
+.con-container .contactInfo ul.sci li a img:hover{
+    filter: invert(0);
+    border-radius: 20px;
+    background: #ffffff;
+    width: 3rem;
 }
 
 .con-container .contactForm{

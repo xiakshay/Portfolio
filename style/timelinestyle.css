@@ -14,7 +14,7 @@ body{
     font-weight: 400;
     background-color: #4c4177;
     color: #fff;
-    background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+    background-image: linear-gradient(315deg, #4c4177 0%, #2c1685 74%);
 }
 
 .timeline .tim-container{
@@ -110,16 +110,16 @@ body{
 .timeline .tim-container .tim-timeline .section .content h2{
     font-weight: 400;
     letter-spacing: 1px;
-    /* padding-bottom: 20px; */
-    /* border: 4px solid #03fff2; */
+    font-size: 25px;
     padding-left: calc(50% - 40px);
-    background: linear-gradient(315deg, #443580 0%, #0c4972 74%);
-    border-radius: 10px;
+    background: linear-gradient(315deg, #2c1685 0%, #003bfc 74%);
+    border-radius: 20px;
     cursor: pointer;
+    transition: 0.5s;
 }
 .timeline .tim-container .tim-timeline .section .content h2:hover{
     background:linear-gradient(180deg, #3d1eb8 0%, #0d72b6 74%);
-    color: rgb(84, 250, 7);
+    color: rgb(167, 36, 156);
 }
 .timeline .tim-container .tim-timeline .section .content p{
     padding: 20px;
@@ -138,6 +138,8 @@ body{
     }    
     .timeline .tim-container .tim-timeline .section .content{
         width: 100%;
-        padding-left: 20px;
+        padding-left: 10px;
     }
+    
+    
 }
