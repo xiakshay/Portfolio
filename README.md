@@ -15,6 +15,7 @@
 -----
 ### Updating data on changes
 -----
+* change will be done
     * When some new project added
     * After learning new skills
     * After achieve something
