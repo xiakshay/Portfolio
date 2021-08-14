@@ -92,9 +92,9 @@ body{
     transition: 0.5s;
 }
 .con-container .contactInfo ul.sci li a img:hover{
-    filter: invert(0);
+    /* filter: invert(0);
     border-radius: 20px;
-    background: #ffffff;
+    background: #ffffff; */
     width: 3rem;
 }
 
