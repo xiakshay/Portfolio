@@ -366,7 +366,7 @@
         </div>
     </section>
     <section id="ccontact" class="contact">
-        <div class="con-container">
+        <div class="con-container" id="contact-blur">
             <div class="contactInfo">
                 <div>
                     <h2>Contact Info</h2>
@@ -420,11 +420,25 @@
                         <span>Write your message here...</span>
                     </div>
                     <div class="inputBox w100">
-                        <input type="submit" value="Send">
+                        <input onclick="toggle()" type="submit" value="Send">
                     </div>
                 </div>
             </div>
         </div>
+        <div id="contact-popup">
+            <h2>It's not working! Don't Mind</h2>
+            <div class="contact-popup">
+                <a href="#ccontact" onclick="toggle()" class="contact-back-pop">Back</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function toggle(){
+                var blur = document.getElementById('contact-blur');
+                blur.classList.toggle('active');
+                var popup = document.getElementById('contact-popup');
+                popup.classList.toggle('active');
+            }
+        </script>
     </section>
 
     <footer class="footer">

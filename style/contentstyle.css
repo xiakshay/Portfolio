@@ -178,6 +178,66 @@ body{
     background: #0d948b;
 }
 
+/* blur ection */
+.con-container #contact-blur.active{
+    filter: blur(1000px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#contact-popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.301);
+    background: #fff;
+    z-index: 1001;
+    visibility: hidden;
+    opacity: 0;
+}
+#contact-popup:hover{
+    border-radius: 30px;
+    background: linear-gradient(to left, rgba(125, 163, 35, 0.712), rgba(26, 67, 129, 0.692), rgba(180,3,255,0.3));
+}
+#contact-popup h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: #002fff;
+    border-bottom: 3px solid rgb(42, 96, 167);
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+#contact-popup h2:hover{
+    color: #00ffaa;
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: #00ffaa;
+}
+#contact-popup .contact-popup .contact-back-pop{
+    padding: 1px 9px;
+    color: #fff;
+    border: 3px solid rgb(255, 255, 255);
+    background: rgb(156, 75, 75);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+#contact-popup .contact-popup .contact-back-pop:hover{
+    background: rgb(150, 3, 3);
+    font-size: 2.5rem;
+}
+.contact #contact-popup.active{
+    text-align: center;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.35s;
+}
+
+
 @media (max-width: 1200px){
     .con-container{
         width: 90%;
@@ -200,6 +260,7 @@ body{
         height: 550px;
     }
 }
+
 @media (max-width: 991px){
     .contact{
         background: #fff38e;
@@ -226,6 +287,27 @@ body{
         justify-content: center;
         align-items: center;
     }
+    #contact-popup{
+        width: 400px;
+        padding: 30px;
+    }
+    #contact-popup h2{
+        font-size: 20px;
+    }
+    #contact-popup .contact-popup .contact-back-pop{
+        font-size: 1.2rem;
+    }
+    #contact-popup h2:hover{
+        color: #00ffaa;
+        font-size: 22px;
+        border-radius: 10px;
+        border-color: #00ffaa;
+    }
+    #contact-popup .contact-popup .contact-back-pop:hover{
+        background: rgb(150, 3, 3);
+        font-size: 1.5rem;
+    }
+
 }
 @media (max-width:600px){
     .con-container .contactForm{
