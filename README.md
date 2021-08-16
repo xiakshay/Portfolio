@@ -21,8 +21,16 @@
     * After achieve something
     * for adding new designs
     * can add new sections also
+    * new features are updating on the basis of new learning
 
 #### I am looking for some big changes
     * ...
 
-## A pop up notification added yahhh
+* A pop up notification added yahhh
+    * added blur section after popup 
+    * popup on about section to preview portfolio and cv
+    * cv has two option 
+        * one for preview in another tab for download and zoom
+        * one for move back to section
+    
+

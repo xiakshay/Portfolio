@@ -79,6 +79,85 @@ body{
     width: 100%;
 }
 
+/* popup section */
+
+.about .ab-container.active{
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#about-popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+
+    height: 700px;
+    overflow: hidden;
+    overflow-y: visible;
+
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.301);
+    background: rgb(255, 255, 255);
+    z-index: 1001;
+    visibility: hidden;
+    opacity: 0;
+}
+#about-popup:hover{
+    border-radius: 30px;
+    /* background: linear-gradient(to left, rgba(125, 163, 35, 0.712), rgba(26, 67, 129, 0.692), rgba(180,3,255,0.3)); */
+}
+#about-popup h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: #002fff;
+    border-bottom: 3px solid rgb(42, 96, 167);
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+#about-popup p{
+    color: #8400ff;
+}
+#about-popup h2:hover{
+    color: #00ffaa;
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: #00ffaa;
+}
+#about-popup .abo-image{
+    width: 500px;
+}
+#about-popup .about-popup .about-back-pop{
+    padding: 1px 9px;
+    color: #fff;
+    border: 3px solid rgb(255, 255, 255);
+    background: rgb(156, 75, 75);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+#about-popup .about-popup #ab-prin{
+    background: rgb(0, 204, 255);
+}
+#about-popup .about-popup .about-back-pop:hover{
+    background: rgb(150, 3, 3);
+    font-size: 2.5rem;
+}
+#about-popup .about-popup #ab-prin:hover{
+    background: yellow;
+}
+.about #about-popup.active{
+    text-align: center;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.35s;
+}
+
+
+
 @media (max-width: 768px){
     .ab-container .grid{
         grid-template-columns: 1fr;

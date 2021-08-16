@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
+
     <!-- stylesheets -->
     <link rel="stylesheet" href="./style/scrollbar.css">
     <link rel="stylesheet" href="./style/navbarstyle.css">
@@ -35,7 +35,7 @@
     <nav class="nav-bar">
         <label class="logo">Portfolio</label>
         <ul class="nav-ul">
-            <li class="nav-li"><a id="nav-a" class="active" href="#home" >Home</a></li>
+            <li class="nav-li"><a id="nav-a" class="active" href="#home">Home</a></li>
             <li class="nav-li"><a id="nav-a" href="#pabout">About</a></li>
             <li class="nav-li"><a id="nav-a" href="#pr-team">Projects</a></li>
             <li class="nav-li"><a id="nav-a" href="#tskills">Skills</a></li>
@@ -229,7 +229,7 @@
             </div>
         </div>
     </section>
-     
+
     <section class="skillprob" id="skillprob">
         <h1 class="skillbar-h1">Skill Progress</h1>
         <div class="progress-bar">
@@ -304,7 +304,8 @@
         <div class="tim-container">
             <div class="tim-topSection">
                 <h1>Skills and projects</h1>
-                <p>All my achieved skills are here and all are updated. I am using all of my day time in learning some new skills. and this will be my habit to learn something new after completing one of the skill.</p>
+                <p>All my achieved skills are here and all are updated. I am using all of my day time in learning some
+                    new skills. and this will be my habit to learn something new after completing one of the skill.</p>
             </div>
 
             <div class="tim-timeline">
@@ -313,42 +314,50 @@
                     <div class="bead"></div>
                     <div class="content">
                         <h2>JavaScript</h2>
-                        <p>Now I'm on stage of learning javascript. I am feeling this language is batter then others. I have completed two projects one on Timer and othre on Calculator.</p>
+                        <p>Now I'm on stage of learning javascript. I am feeling this language is batter then others. I
+                            have completed two projects one on Timer and othre on Calculator.</p>
                     </div>
                 </div>
                 <div class="section">
                     <div class="bead"></div>
                     <div class="content">
                         <h2>CSS</h2>
-                        <p>After learning HTML i need this to design my web. And Learnt about 54% till now. I designed some of completed web are precticing on upcoming websites.</p>
+                        <p>After learning HTML i need this to design my web. And Learnt about 54% till now. I designed
+                            some of completed web are precticing on upcoming websites.</p>
                     </div>
                 </div>
                 <div class="section">
                     <div class="bead"></div>
                     <div class="content">
                         <h2>HTML</h2>
-                        <p>Going for showoff part of development. I decided to choose Web Development for implement any research or project on web to show this world.</p>
+                        <p>Going for showoff part of development. I decided to choose Web Development for implement any
+                            research or project on web to show this world.</p>
                     </div>
                 </div>
                 <div class="section">
                     <div class="bead"></div>
                     <div class="content">
                         <h2>Python</h2>
-                        <p>I get a good hand on Python. This is simplest programming language and easy to do a big project on this. I gained only till DSA now. After some time i'll go for ML then Learn in deeper.</p>
+                        <p>I get a good hand on Python. This is simplest programming language and easy to do a big
+                            project on this. I gained only till DSA now. After some time i'll go for ML then Learn in
+                            deeper.</p>
                     </div>
                 </div>
                 <div class="section">
                     <div class="bead"></div>
                     <div class="content">
                         <h2>C / C++</h2>
-                        <p>1st Programming language of my life, In this i have learnt Data structure, Algorithms, time cpmplexity and more. This is fast language then others and many ways to maintain complexity. that's why this is most loved programing language. I have done a project on this that is 'Multi Game System' with timer and history section. You gonna love this project.</p>
+                        <p>1st Programming language of my life, In this i have learnt Data structure, Algorithms, time
+                            cpmplexity and more. This is fast language then others and many ways to maintain complexity.
+                            that's why this is most loved programing language. I have done a project on this that is
+                            'Multi Game System' with timer and history section. You gonna love this project.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="about" id="pabout">
-        <div class="ab-container">
+        <div class="ab-container" id="about-blur">
             <div class="grid">
                 <div class="left">
                     <img src="./image/my_pic.jpeg" alt="My pic">
@@ -360,10 +369,28 @@
                     <p>dipisicing elit. Aperiam consequatur dolorem non amet recusandae, expedita similique dignissimos
                         numquam doloremque error in et accusantium ad excepturi, quasi quo repellat. Deserunt, nam?
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur quisquam natus q</p>
-                    <a href="#" class="btn">Hire Me</a>
+                    <a onclick="aboutToggle()" href="#pabout" class="btn">Hire Me</a>
                 </div>
             </div>
         </div>
+        <div id="about-popup">
+            <h2>Akshay Kumar Kushwaha</h2>
+            <img class="abo-image" src="./image/frontim3.jpg" alt="akshay Portfolio">
+            <p>Lmus dolor. Lorem, ipsum dolor sit amet consectet. Perspiciatis quas nulla nisi commodi quibusdam eaque, nihil aut quaerat accusantium, praesentium tenetur consequatur provident labore culpa sit. Labore ipsum sint eos ipsa architecto voluptate eveniet id veniam fugit ab, quas magnam doloremque porro pariatur nulla odio voluptatum recusandae harum nobis itaque necessitatibus..</p>
+            <div class="about-popup">
+                <a href="#pabout" onclick="aboutToggle()" class="about-back-pop">Back</a>
+                <a href="./image/frontim2.jpg" target="_blank"  class="about-back-pop" id="ab-prin">Preview</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function aboutToggle() {
+                var blur = document.getElementById('about-blur');
+                blur.classList.toggle('active');
+                var popup = document.getElementById('about-popup');
+                popup.classList.toggle('active');
+                
+            }
+        </script>
     </section>
     <section id="ccontact" class="contact">
         <div class="con-container" id="contact-blur">
@@ -373,9 +400,9 @@
                     <ul class="info">
                         <li>
                             <span><img src="./image/location.png" alt="location"></span>
-                            <span>No. 1 Colony <br>
-                                Durga mandir, Katihar <br>
-                                854105</span>
+                            <span>No. 1 Planat <br>
+                                God Gli, Earth <br>
+                                Milky Way</span>
                         </li>
                         <li>
                             <span><img src="./image/mail.png" alt="location"></span>
@@ -388,42 +415,47 @@
                     </ul>
                 </div>
                 <ul class="sci">
-                    <li><a href="https://www.facebook.com/Akshay010175" target="_blank"><img src="./image/1.png" alt="fb"></a></li>
-                    <li><a href="https://twitter.com/akshay010175?s=09" target="_blank"><img src="./image/2.png" alt="tw"></a></li>
-                    <li><a href="https://instagram.com/xiakshay?utm_medium=copy_link" target="_blank"><img src="./image/3.png" alt="ins"></a></li>
-                    <li><a href="https://www.pinterest.com/akshay010175" target="_blank"><img src="./image/4.png" alt="ps"></a></li>
-                    <li><a href="https://www.linkedin.com/in/akshay-kumar-kushwaha-19b8621bb" target="_blank"><img src="./image/5.png" alt="in"></a></li>
+                    <li><a href="https://www.facebook.com/Akshay010175" target="_blank"><img src="./image/1.png"
+                                alt="fb"></a></li>
+                    <li><a href="https://twitter.com/akshay010175?s=09" target="_blank"><img src="./image/2.png"
+                                alt="tw"></a></li>
+                    <li><a href="https://instagram.com/xiakshay?utm_medium=copy_link" target="_blank"><img
+                                src="./image/3.png" alt="ins"></a></li>
+                    <li><a href="https://www.pinterest.com/akshay010175" target="_blank"><img src="./image/4.png"
+                                alt="ps"></a></li>
+                    <li><a href="https://www.linkedin.com/in/akshay-kumar-kushwaha-19b8621bb" target="_blank"><img
+                                src="./image/5.png" alt="in"></a></li>
                 </ul>
             </div>
 
             <div class="contactForm"">
                 <h2>Send a Message</h2>
-                <div class="formBox">
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>First Name</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Last Name</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="email" required>
-                        <span>Email Address</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Mobile Number</span>
-                    </div>
-                    <div class="inputBox w100">
-                        <textarea required></textarea>
-                        <span>Write your message here...</span>
-                    </div>
-                    <div class="inputBox w100">
-                        <input onclick="toggle()" type="submit" value="Send">
-                    </div>
+                <div class=" formBox">
+                <div class="inputBox w50">
+                    <input type="text" required>
+                    <span>First Name</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="text" required>
+                    <span>Last Name</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="email" required>
+                    <span>Email Address</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="text" required>
+                    <span>Mobile Number</span>
+                </div>
+                <div class="inputBox w100">
+                    <textarea required></textarea>
+                    <span>Write your message here...</span>
+                </div>
+                <div class="inputBox w100">
+                    <input onclick="toggle()" type="submit" value="Send">
                 </div>
             </div>
+        </div>
         </div>
         <div id="contact-popup">
             <h2>It's not working! Don't Mind</h2>
@@ -432,7 +464,7 @@
             </div>
         </div>
         <script type="text/javascript">
-            function toggle(){
+            function toggle() {
                 var blur = document.getElementById('contact-blur');
                 blur.classList.toggle('active');
                 var popup = document.getElementById('contact-popup');
@@ -449,7 +481,8 @@
                     <ul>
                         <li><a href="#pabout">about me</a></li>
                         <li><a href="#tskills">services</a></li>
-                        <li><a href="https://qph.fs.quoracdn.net/main-qimg-476002e6e1975c15aadf86995cd07e8a" target="_blank">privacy policy</a></li>
+                        <li><a href="https://qph.fs.quoracdn.net/main-qimg-476002e6e1975c15aadf86995cd07e8a"
+                                target="_blank">privacy policy</a></li>
                         <li><a href="https://www.amazon.com/" target="_blank">affilate</a></li>
                     </ul>
                 </div>
@@ -466,8 +499,10 @@
                 <div class="footer-col">
                     <h4>More Info</h4>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/akshay-kumar-kushwaha-19b8621bb" target="_blank">Job</a></li>
-                        <li><a href="https://www.linkedin.com/in/akshay-kumar-kushwaha-19b8621bb" target="_blank">Achevement</a></li>
+                        <li><a href="https://www.linkedin.com/in/akshay-kumar-kushwaha-19b8621bb"
+                                target="_blank">Job</a></li>
+                        <li><a href="https://www.linkedin.com/in/akshay-kumar-kushwaha-19b8621bb"
+                                target="_blank">Achevement</a></li>
                         <li><a href="#tskills">Detils</a></li>
                         <li><a href="#">--</a></li>
                     </ul>
@@ -475,10 +510,14 @@
                 <div class="footer-col">
                     <h4>Follow us</h4>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/Akshay010175" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/akshay010175?s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com/xiakshay?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/akshay-kumar-kushwaha-19b8621bb" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/Akshay010175" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/akshay010175?s=09" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/xiakshay?utm_medium=copy_link" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akshay-kumar-kushwaha-19b8621bb" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
