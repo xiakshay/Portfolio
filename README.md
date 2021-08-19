@@ -33,4 +33,8 @@
         * one for preview in another tab for download and zoom
         * one for move back to section
     
-
+### After collecting some data i am here 
+* time to big change
+    * data change
+    * find more simpler ways to define degines
+    
