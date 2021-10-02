@@ -1,5 +1,6 @@
 # My portfolio
 ## All updates will be here related to my carrier
+[Live portfolio](https://ak-myport.netlify.app/)
 
 ### front page of portfolio
 -----
