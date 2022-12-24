@@ -160,9 +160,21 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 
 @media (max-width: 768px){
+
     .ab-container .grid{
         grid-template-columns: 1fr;
     }
+    .ab-container .grid .left img{
+        margin-top: 120px;
+    }
     
+    
+}
+
+@media (max-width: 600px){
+
+    .ab-container .grid .left img{
+        margin-top: 60px;
+    }
     
 }
