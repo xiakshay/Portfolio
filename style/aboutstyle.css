@@ -165,16 +165,24 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
         grid-template-columns: 1fr;
     }
     .ab-container .grid .left img{
-        margin-top: 120px;
+        height: 290px;
     }
     
     
 }
 
-@media (max-width: 600px){
+@media (max-width: 650px){
 
     .ab-container .grid .left img{
-        margin-top: 60px;
+        height: 220px;
+    }
+    
+}
+
+@media (max-width: 540px){
+
+    .ab-container .grid .left img{
+        height: 180px;
     }
     
 }
